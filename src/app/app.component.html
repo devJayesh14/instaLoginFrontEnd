@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="login-box">
+        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" class="logo"> -->
+        <div class=""
+            style="background-image: url(&quot;https://static.cdninstagram.com/rsrc.php/v3/yM/r/8n91YnfPq0s.png&quot;); background-position: 0px -52px; background-size: auto; width: 175px; height: 51px; background-repeat: no-repeat; display: inline-block;">
+        </div>
+        <form>
+            <div class="input-box">
+                <input type="text" placeholder="Phone number, username, or email" name="username"
+                    [(ngModel)]="username">
+                <label class="text-danger text-left" style="font-size: 12px;" *ngIf="isUserName">Please Enter
+                    Username!!</label>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" name="password" [(ngModel)]="password">
+                <label class="text-danger text-left" style="font-size: 12px;" *ngIf="islogin">Please Enter
+                    password!!</label>
+            </div>
+            <button type="submit" class="login-btn" (click)="login()">Log In</button>
+            <div class="divider">OR</div>
+            <button type="button" class="fb-login-btn">Log in with Facebook</button>
+            <a href="#" class="forgot-password">Forgot password?</a>
+        </form>
+    </div>
+    <div class="signup-box">
+        <p>Don't have an account? <a href="#">Sign up</a></p>
+    </div>
+</div>

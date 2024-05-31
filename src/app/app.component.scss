@@ -1,0 +1,118 @@
+.container {
+    width: 400px;
+    text-align: center;
+    margin-top: 20px;
+
+    @media screen and (max-width:567px) {
+        width: 100%;
+    }
+}
+
+.login-box {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 40px 40px 20px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 175px;
+    margin-bottom: 30px;
+}
+
+.input-box {
+    margin-bottom: 10px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: #fafafa;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #0095f6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #007bb5;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #8e8e8e;
+    margin: 10px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-top: 1px solid #dbdbdb;
+}
+
+.divider::before {
+    margin-right: 10px;
+}
+
+.divider::after {
+    margin-left: 10px;
+}
+
+.fb-login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #385185;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.fb-login-btn:hover {
+    background-color: #2d3e70;
+}
+
+.forgot-password {
+    display: block;
+    color: #00376b;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.signup-box {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+}
+
+.signup-box p {
+    margin: 0;
+}
+
+.signup-box a {
+    color: #0095f6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-box a:hover {
+    text-decoration: underline;
+}
